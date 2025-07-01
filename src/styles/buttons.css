@@ -1,0 +1,82 @@
+.cta-button {
+    margin-top: 1rem;
+    position: relative;
+    background: white;
+    color: #232d62;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    max-width: fit-content;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cta-button:hover {
+    background: #de6d52;
+    color: white;
+}
+
+.cta-button.alt {
+    background-color: #de6d52;
+}
+
+.cta-button.alt:hover {
+    background-color: #c2543b;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    font-family: sans-serif;
+}
+
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.button-wrapper {
+    background: linear-gradient(to bottom, rgba(55, 65, 81, 0.4), transparent);
+    padding: 4px;
+    border-radius: 16px;
+}
+
+.button {
+    background: linear-gradient(to bottom, #374151, #4b5563);
+    border: none;
+    border-radius: 12px;
+    padding: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.button:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    transform: scale(0.995);
+}
+
+.button-inner {
+    background: linear-gradient(to bottom, #4b5563, #374151);
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

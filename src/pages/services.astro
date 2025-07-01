@@ -1,0 +1,87 @@
+---
+import Navbar from "../components/navbar.astro";
+import "../styles/buttons.css";
+import "../styles/main.css";
+import "../styles/text.css";
+import "../styles/divBlocks.css";
+import "../styles/services.css"
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Our Services | Consult Your Community</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body style="margin: 0; font-family: 'Roboto', sans-serif;">
+        <Navbar />
+
+        <main
+            style="padding: 120px 20px 60px; max-width: 1100px; margin: 0 auto; line-height: 1.8;"
+        >
+            <h1 class="title-text-black">Our Services</h1>
+            <p
+                style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;"
+            >
+                What can we do for you?
+            </p>
+
+            <section class="services-grid">
+                <div class="service-card">
+                    <h2>Market Research</h2>
+                    <p>
+                        We analyze local trends, competitors, and customer needs
+                        to help you position your business effectively.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Web Design</h2>
+                    <p>
+                        Our teams help improve or build a modern digital
+                        presence that engages your audience and supports
+                        business goals.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Brand Strategy</h2>
+                    <p>
+                        Whether you’re building a brand or refining one, we help
+                        clarify your message and align your identity.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Operations Consulting</h2>
+                    <p>
+                        Streamline your business processes and increase
+                        efficiency with insights from our operations-focused
+                        teams.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Social Media & Outreach</h2>
+                    <p>
+                        We craft outreach strategies and social media plans
+                        tailored to connect with your target community.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <h2>Custom Solutions</h2>
+                    <p>
+                        Don’t see what you need? We tailor our consulting to
+                        address your unique challenges and goals.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

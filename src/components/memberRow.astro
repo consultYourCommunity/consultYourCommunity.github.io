@@ -1,0 +1,30 @@
+---
+export interface Member {
+    name: string;
+    role: string;
+    image: string;
+}
+
+const { title, members } = Astro.props;
+---
+
+<section class="member-row">
+    <h2 class="row-title">{title}</h2>
+    <div class="board-grid">
+        {
+            members.map((member: Member) => (
+                <div class="board-member">
+                    <img
+                        src={
+                            member.image || "/images/headshots/default-avatar-profile-icon.webp"
+                        }
+                        alt={member.name}
+                        onerror="this.src='/images/headshots/default-avatar-profile-icon.webp'"
+                    />
+                    <h3>{member.name}</h3>
+                    <p>{member.role}</p>
+                </div>
+            ))
+        }
+    </div>
+</section>

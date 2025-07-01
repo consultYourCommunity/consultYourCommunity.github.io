@@ -1,0 +1,59 @@
+.team-page {
+    padding: 120px 20px 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.exec-board {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.board-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+.board-member {
+    text-align: center;
+}
+
+.board-member img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    /* Ensures the image fills the space without distortion */
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    background-color: #e0e0e0;
+    /* Fallback background */
+    display: block;
+}
+
+
+.board-member h3 {
+    margin: 0.5rem 0 0.25rem;
+    color: #232d62;
+    font-size: 1.1rem;
+}
+
+.board-member p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.recruitment {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.recruitment p {
+    max-width: 600px;
+    margin: 1rem auto 2rem;
+    font-size: 1.05rem;
+}

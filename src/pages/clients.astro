@@ -1,0 +1,90 @@
+---
+import Navbar from "../components/navbar.astro";
+import "../styles/main.css";
+import "../styles/text.css"
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Clients | Consult Your Community</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body style="margin: 0; font-family: 'Roboto', sans-serif;">
+        <Navbar />
+
+        <main style="padding: 120px 20px 60px; max-width: 70vw; margin: 0 auto; line-height: 1.8; text-align:center;">
+            <h1 class="title-text-black">Partner with Us</h1>
+
+            <p style="text-align: center; font-size: 1.1rem;">
+                Interested in working with our student consultants? We'd love to
+                help you grow your business.
+            </p>
+
+            <div style="text-align: center; margin: 2rem 0;">
+                <a
+                    href="https://forms.gle/sZn9oH6rDY8DyLpV8"
+                    target="https://forms.gle/sZn9oH6rDY8DyLpV8"
+                    class="cta-button"
+                >
+                    Sign Up via Google Form
+                </a>
+            </div>
+
+            <hr style="margin: 3rem 0;" />
+
+            <section>
+                <div class="left-side-title-layout">
+                    <div>
+                        <h2 style="color: #232d62;">The Process</h2>
+                        <p>
+                            While the structure of an engagement will depend on your company's needs, this is the format most teams will follow.
+                        </p>
+                    </div>
+                    <div class="vertical-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Scoping Call</h3>
+                                <p>
+                                    A short virtual meeting to learn about your
+                                    business, goals, and challenges. This helps us
+                                    understand how our team can help.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Engagement</h3>
+                                <p>
+                                    A team of analysts will work with you throughout the
+                                    semester, meeting regularly and developing
+                                    tailored recommendations.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Final Recommendation</h3>
+                                <p>
+                                    A comprehensive presentation and report
+                                    summarize our findings, proposed solutions, and
+                                    next steps.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
