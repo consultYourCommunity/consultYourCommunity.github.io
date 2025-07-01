@@ -1,0 +1,55 @@
+---
+const navLinks = [
+    { href: "/about", label: "About" },
+    { href: "/clients", label: "Client page" },
+    { href: "/team", label: "Our Team"},
+    { href: "/contact", label: "Contact Us" },
+];
+---
+
+<style>
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .brand {
+        font-weight: bold;
+        font-size: 1.25rem;
+        color: #232d62;
+        text-decoration: none;
+        padding-inline: 2rem;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        padding-inline: 2rem;
+    }
+
+    .nav-links a {
+        color: #232d62;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+        color: #de6d52;
+    }
+</style>
+
+<nav>
+    <a href="/" class="brand">Consult Your Community</a>
+    <div class="nav-links">
+        {navLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+    </div>
+</nav>

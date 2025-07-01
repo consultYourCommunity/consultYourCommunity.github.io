@@ -1,0 +1,65 @@
+.hero-text-white {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-size: 10rem;
+    max-width: 50vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title-text-black {
+    position: relative;
+    text-align: center;
+    color: black;
+    z-index: 1;
+    font-size: 2.25rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.centered-paragraph-text {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-size: 1.5rem;
+}
+
+.left-side-title-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.left-side-title-layout h1 {
+    font-size: 1.5rem;
+    color: #232d62;
+    margin: 0;
+}
+
+.right-side-title-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.right-side-title-layout h1 {
+    font-size: 1.5rem;
+    color: #232d62;
+    margin: 0;
+}
+
+.centered-intro {
+    text-align: center;
+    margin: 0 auto 3rem;
+    max-width: 700px;
+}
+
+.centered-intro p {
+    font-size: 1.1rem;
+    margin: 1rem 0 2rem;
+}

@@ -1,0 +1,38 @@
+---
+import Navbar from "../components/navbar.astro";
+import "../styles/buttons.css";
+import "../styles/main.css";
+import "../styles/text.css";
+import "../styles/divBlocks.css";
+---
+
+<html lang="en">
+	<head>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Consult Your Community</title>
+	</head>
+	<body style="margin: 0; font-family: sans-serif;">
+		<Navbar />
+
+		<main style="padding-top: 80px">
+			<section class="main">
+				<h1 style="hero-text-white">
+					Consult Your Community at Penn State
+				</h1>
+				<h2 style="centered-text">
+					Empowering Small Businesses,<br /> Developing Future Leaders.
+				</h1>
+				<p style="centered-text">
+					CYC Penn State provides pro-bono consulting to small
+					businesses while giving students real-world consulting
+					experience.
+				</p>
+				<div style="center-wrapper">
+					<a href="/about" class="cta-button">Learn more</a>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

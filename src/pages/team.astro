@@ -1,0 +1,82 @@
+---
+import Navbar from "../components/navbar.astro";
+import MemberRow from "../components/memberRow.astro";
+import "../styles/main.css";
+import "../styles/team.css"
+
+const execs = [
+    {
+        name: "John Doe",
+        role: "President",
+        image: "/images/headshots/alex.jpg",
+    },
+    {
+        name: "Jane Doe",
+        role: "Vice President",
+        image: "/images/headshots/jamie.jpg",
+    },
+];
+
+const directors = [
+    {
+        name: "Taylor Smith",
+        role: "Director of Client Engagement",
+        image: "/images/headshots/taylor.jpg",
+    },
+    {
+        name: "Morgan Kim",
+        role: "Director of Operations",
+        image: "/images/headshots/morgan.jpg",
+    },
+];
+
+const leads = [
+    {
+        name: "Chris Doe",
+        role: "Project Lead",
+        image: "/images/headshots/chris.jpg",
+    },
+    {
+        name: "Sam Patel",
+        role: "Project Lead",
+        image: "/images/headshots/sam.jpg",
+    },
+];
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Our Team | Consult Your Community</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body style="margin: 0; font-family: 'Roboto', sans-serif;">
+        <Navbar />
+
+        <main class="team-page">
+            <h1 class="title-text-black" style="text-align: center;">
+                Executive Board
+            </h1>
+
+            <MemberRow title="Executive Team" members={execs} />
+            <MemberRow title="Directors" members={directors} />
+            <MemberRow title="Project Leads" members={leads} />
+
+            <section class="recruitment">
+                <h2 class="title-text-black">Join Our Team</h2>
+                <p>
+                    We’re always looking for passionate, driven students to join
+                    our consulting organization. Whether you're new to
+                    consulting or experienced, we welcome applicants from all
+                    majors and backgrounds. Check for dates on our Instagram
+                    and LinkedIn!
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
